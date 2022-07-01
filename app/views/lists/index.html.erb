@@ -1,3 +1,10 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1542204625-ca960ca44635?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);">
+  <div class="container">
+    <h1>The movie<strong> watch lists</strong> you've <strong>been waiting for</strong>!</h1>
+    <a> <%= link_to "Add list", new_list_path, class: 'btn btn-flat'  %> </a>
+  </div>
+</div>
+
 <h1>Lists</h1>
 
 <ul>
@@ -5,5 +12,3 @@
     <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
 </ul>
-
-<%= link_to "Add list", new_list_path %>
